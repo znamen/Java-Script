@@ -26,28 +26,28 @@ sum(a, b)
 ------------------------------
 //Простой опросник
 
-const CURRENT_YEAR = 2024;
-const CORRECT_ANSWER = 'Ответ верный';
-const ERROR_ANSWER = 'Ответ неверный';
-
-const inputNode = document.querySelector('.js-input');
-const buttonNode = document.querySelector('.js-button');
-const outputNode = document.querySelector('.js-output');
-
-buttonNode.addEventListener('click', function() {
-    const inputValue = inputNode.value;
-
-    if (!inputValue) {
-        return;
-    }
-
-    const answer = Number(inputNode.value);
-    let output = CORRECT_ANSWER;
-
-    if (answer !== CURRENT_YEAR) {
-        output = ERROR_ANSWER;
-    }
+    const CURRENT_YEAR = 2024;
+    const CORRECT_ANSWER = 'Ответ верный';
+    const ERROR_ANSWER = 'Ответ неверный';
     
-    outputNode.innerHTML = output;
-});
+    const inputNode = document.querySelector('.js-input');
+    const buttonNode = document.querySelector('.js-button');
+    const outputNode = document.querySelector('.js-output');
+    
+    buttonNode.addEventListener('click', function() {
+        const inputValue = inputNode.value;
+    
+        if (!inputValue) {
+            return;
+        }
+    
+        const answer = Number(inputNode.value);
+        let output = CORRECT_ANSWER;
+    
+        if (answer !== CURRENT_YEAR) {
+            output = ERROR_ANSWER;
+        }
+        
+        outputNode.innerHTML = output;
+    });
 
