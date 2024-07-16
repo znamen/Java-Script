@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Использование условных выражений</title>
+<link href="../_css/site.css" rel="stylesheet">
+<script>
+	var num = prompt('От какого числа до 30 посчитать?','');
+	num = parseInt(num);
+	//var num = 1;
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="content">
+    <div class="main">
+      <h1>Использование условных выражений</h1>
+      <script>
+	while (num <=30) {
+	document.write('Число ' + num + '<br>');
+	num = num + 1;
+	}
+	  </script> 
+    </div>
+</body>
+</html>
